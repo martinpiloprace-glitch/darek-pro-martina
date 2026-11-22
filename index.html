@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dopis pro Santu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #1a0f0a 0%, #3d1c10 100%);
+      color: #fff8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .letter-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 3px solid #ffb74d;
+      border-radius: 20px;
+      max-width: 960px;
+      width: 100%;
+      padding: 35px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      color: #ffb74d;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .wishes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .wish-item {
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid #ff9800;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .wish-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #ffb74d;
+    }
+
+    .wish-item h2 {
+      color: #ffb74d;
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .wish-item p {
+      font-size: 1rem;
+      color: #e0cbb8;
+      line-height: 1.4;
+    }
+
+    .signature {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="letter-card">
+    <h1>Dopis pro Santu</h1>
+
+    <div class="intro">
+      <p><strong>Milý Santo,</strong></p>
+      <p>letos bych si k Vánocům moc přál tyto praktické věci, které mě v zimě zahřejí:</p>
+    </div>
+
+    <div class="wishes-grid">
+      <!-- 1. přání: Velký hrnek na polévku -->
+      <div class="wish-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Tomato_soup_in_a_mug.jpg/800px-Tomato_soup_in_a_mug.jpg" alt="Velký hrnek na polévku">
+        <h2>1. Velký hrnek na polévku</h2>
+        <p>Poctivý velký buclák na horkou polévku, když přijdu promrzlý domů.</p>
+      </div>
+
+      <!-- 2. přání: Zimní vložky s hliníkovou fólií -->
+      <div class="wish-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Insoles.jpg/800px-Insoles.jpg" alt="Zimní vložky do bot">
+        <h2>2. Zimní vložky do bot s hliníkovou fólií</h2>
+        <p>Zateplené vložky s ALU vrstvou, aby mi v mrazu netáhlo od země na nohy.</p>
+      </div>
+
+      <!-- 3. přání: Dobrý čaj -->
+      <div class="wish-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Masala_Chai.JPG/800px-Masala_Chai.JPG" alt="Dobrý horký čaj">
+        <h2>3. Dobrý čaj</h2>
+        <p>A pokud ti ještě zbydou penízky, budu moc rád za nějaký dobrý čaj na zahřátí.</p>
+      </div>
+    </div>
+
+    <div class="signature">
+      <p>Předem moc děkuji!</p>
+      <p><strong>Martin</strong></p>
+    </div>
+  </div>
+
+</body>
+</html>
